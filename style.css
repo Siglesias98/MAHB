@@ -4,6 +4,7 @@ body, html {
     font-family: Arial, sans-serif;
     overflow-x: hidden;
     scroll-behavior: smooth;
+    background-color: #000; /* Fondo negro para toda la página */
 }
 
 .inicio {
@@ -12,7 +13,7 @@ body, html {
     justify-content: center;
     align-items: center;
     height: 100vh;
-    background-color: #1a1a1a;
+    background-color: #000; /* Fondo negro para la sección de inicio */
 }
 
 .titulo {
@@ -51,7 +52,7 @@ body, html {
     justify-content: center;
     align-items: center;
     height: 100vh;
-    background-color: #ffffff;
+    background-color: #000; /* Fondo negro para la sección de la imagen */
 }
 
 .imagen-flor img {
