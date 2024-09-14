@@ -21,7 +21,6 @@ body {
     justify-content: center;
     align-items: center;
     text-align: center;
-    transition: transform 1s ease, opacity 1s ease; /* Transición para deslizamiento */
 }
 
 /* Estilo para el título */
@@ -29,7 +28,7 @@ body {
     font-size: 3em;
     color: #FFFF00; /* Color amarillo neón */
     text-shadow: 0 0 10px #FFFF00; /* Efecto de resplandor */
-    margin-bottom: 20px; /* Espacio entre el título y el botón */
+    margin-bottom: 20px;
 }
 
 /* Estilo para el botón */
@@ -70,6 +69,16 @@ body {
 
 /* Animación de deslizamiento */
 .deslizar-arriba {
-    transform: translateY(-100vh); /* Desliza hacia arriba */
-    opacity: 0; /* Oculta el contenido */
+    animation: deslizar 1s forwards; /* Animación para deslizar hacia arriba */
+}
+
+@keyframes deslizar {
+    from {
+        transform: translateY(0);
+        opacity: 1;
+    }
+    to {
+        transform: translateY(-100vh); /* Desliza hacia arriba */
+        opacity: 0;
+    }
 }
