@@ -22,6 +22,7 @@ body {
     align-items: center;
     text-align: center;
     transition: transform 1s ease, opacity 1s ease; /* Transición para deslizamiento */
+    z-index: 1; /* Asegúrate de que esté encima del contenedor de la imagen */
 }
 
 /* Estilo para el título */
@@ -59,13 +60,15 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #000; /* Asegúrate de que el fondo también sea negro para que la imagen se vea bien */
+    background-color: #000; /* Fondo negro para que la imagen se vea bien */
+    z-index: 2; /* Asegúrate de que esté encima de la página de inicio */
 }
 
 /* Estilo para la imagen floral */
 #imagenFloral {
     width: 80%; /* Ajusta el tamaño según sea necesario */
     max-width: 800px; /* Limita el tamaño máximo */
+    height: auto;
 }
 
 /* Animación de deslizamiento */
