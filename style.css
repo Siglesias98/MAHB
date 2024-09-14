@@ -21,6 +21,7 @@ body {
     justify-content: center;
     align-items: center;
     text-align: center;
+    transition: transform 1s ease, opacity 1s ease; /* Transición para deslizamiento */
 }
 
 /* Estilo para el título */
@@ -69,16 +70,6 @@ body {
 
 /* Animación de deslizamiento */
 .deslizar-arriba {
-    animation: deslizar 1s forwards; /* Animación para deslizar hacia arriba */
-}
-
-@keyframes deslizar {
-    from {
-        transform: translateY(0);
-        opacity: 1;
-    }
-    to {
-        transform: translateY(-100vh); /* Desliza hacia arriba */
-        opacity: 0;
-    }
+    transform: translateY(-100vh); /* Desliza hacia arriba */
+    opacity: 0; /* Oculta el contenido */
 }
