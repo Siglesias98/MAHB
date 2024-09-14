@@ -5,17 +5,18 @@ body {
     font-family: 'Arial', sans-serif;
     background-color: #000; /* Fondo negro */
     color: #fff; /* Texto blanco para contraste */
+    overflow: hidden; /* Evita barras de desplazamiento */
+}
+
+.pagina-inicio {
+    text-align: center;
+    position: relative;
+    height: 100vh; /* Ocupa toda la altura de la ventana */
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
 }
 
-.container {
-    text-align: center;
-}
-
-/* Estilo para el título */
 #titulo {
     font-size: 3em;
     color: #FFFF00; /* Color amarillo neón */
@@ -23,7 +24,6 @@ body {
     margin-bottom: 20px;
 }
 
-/* Estilo para el botón */
 .boton {
     background-color: #FFFF00; /* Color amarillo */
     border: none;
@@ -39,10 +39,30 @@ body {
     background-color: #f2f200; /* Color amarillo más claro al pasar el ratón */
 }
 
-/* Estilo para la imagen */
+/* Estilo para el contenedor de la imagen */
+.imagen-container {
+    display: none; /* Oculta el contenedor de la imagen por defecto */
+    text-align: center;
+}
+
 #imagenFloral {
-    display: none; /* Oculta la imagen por defecto */
     margin-top: 20px;
     width: 80%; /* Ajusta el tamaño según sea necesario */
     max-width: 600px; /* Limita el tamaño máximo */
+}
+
+/* Animación de deslizamiento */
+.deslizar-arriba {
+    animation: deslizar 1s forwards; /* Animación para deslizar hacia arriba */
+}
+
+@keyframes deslizar {
+    from {
+        transform: translateY(0);
+        opacity: 1;
+    }
+    to {
+        transform: translateY(-100vh); /* Desliza hacia arriba */
+        opacity: 0;
+    }
 }
