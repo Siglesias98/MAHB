@@ -28,7 +28,7 @@ body {
     font-size: 3em;
     color: #FFFF00; /* Color amarillo neón */
     text-shadow: 0 0 10px #FFFF00; /* Efecto de resplandor */
-    margin-bottom: 20px;
+    margin-bottom: 20px; /* Espacio entre el título y el botón */
 }
 
 /* Estilo para el botón */
