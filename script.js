@@ -8,6 +8,6 @@ function mostrarImagen() {
     // Espera a que termine la animación antes de mostrar la imagen
     setTimeout(() => {
         paginaInicio.style.display = 'none'; // Oculta la página de inicio
-        imagenContainer.style.display = 'block'; // Muestra el contenedor de la imagen
+        imagenContainer.style.display = 'flex'; // Muestra el contenedor de la imagen
     }, 1000); // Tiempo de espera debe coincidir con la duración de la animación
 }
