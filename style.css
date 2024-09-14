@@ -59,6 +59,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    background-color: #000; /* Asegúrate de que el fondo también sea negro para que la imagen se vea bien */
 }
 
 /* Estilo para la imagen floral */
