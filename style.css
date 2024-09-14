@@ -1,17 +1,16 @@
-.pagina-inicio {
-    text-align: center;
-    margin-top: 50px;
+.contenido-imagen {
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
-.boton {
-    padding: 10px 20px;
-    font-size: 16px;
-    cursor: pointer;
+.texto-izquierda {
+    margin-right: 20px; /* Espacio entre el texto y la imagen */
+    text-align: left;
 }
 
 .imagen-container {
-    text-align: center;
-    margin-top: 20px;
+    max-width: 100%;
 }
 
 #imagenFloral {
