@@ -1,13 +1,13 @@
 function mostrarImagen() {
     const paginaInicio = document.getElementById('paginaInicio');
-    const imagenContainer = document.getElementById('imagenContainer');
+    const contenidoFinal = document.getElementById('contenidoFinal');
 
     // Añade la clase para deslizar la página hacia arriba
     paginaInicio.classList.add('deslizar-arriba');
 
-    // Espera a que termine la animación antes de mostrar la imagen
+    // Espera a que termine la animación antes de mostrar el contenido final
     setTimeout(() => {
         paginaInicio.style.display = 'none'; // Oculta la página de inicio
-        imagenContainer.style.display = 'flex'; // Muestra el contenedor de la imagen
+        contenidoFinal.style.display = 'flex'; // Muestra el contenido final
     }, 1000); // Tiempo de espera debe coincidir con la duración de la animación
 }
