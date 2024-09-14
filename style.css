@@ -48,6 +48,25 @@ body {
     background-color: #f2f200; /* Color amarillo más claro al pasar el ratón */
 }
 
+/* Estilo para el contenedor de la imagen */
+.imagen-container {
+    display: none; /* Oculta el contenedor de la imagen por defecto */
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Estilo para la imagen floral */
+#imagenFloral {
+    width: 80%; /* Ajusta el tamaño según sea necesario */
+    max-width: 800px; /* Limita el tamaño máximo */
+}
+
 /* Animación de deslizamiento */
 .deslizar-arriba {
     transform: translateY(-100vh); /* Desliza hacia arriba */
