@@ -28,7 +28,7 @@ body {
 #titulo {
     font-size: 3em;
     color: #FFFF00; /* Color amarillo neón */
-    text-shadow: 0 0 10px #FFFF00; /* Efecto de resplandor */
+    text-shadow: 0 0 10px #FFFF00, 0 0 20px #FFFF00, 0 0 30px #FFFF00; /* Efecto de resplandor neón */
     margin-bottom: 20px; /* Espacio entre el título y el botón */
 }
 
@@ -48,15 +48,17 @@ body {
     background-color: #f2f200; /* Color amarillo más claro al pasar el ratón */
 }
 
-/* Estilo para el contenedor de la imagen */
-.imagen-container {
-    display: none; /* Oculta el contenedor de la imagen por defecto */
+/* Estilo para el contenido final */
+.contenido-final {
+    display: none; /* Oculta el contenido final por defecto */
+    text-align: center;
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100vh;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
 }
@@ -65,6 +67,13 @@ body {
 #imagenFloral {
     width: 80%; /* Ajusta el tamaño según sea necesario */
     max-width: 600px; /* Limita el tamaño máximo */
+}
+
+/* Estilo para el comentario */
+.comentario {
+    font-size: 1.5em;
+    color: #FFFF00; /* Color amarillo neón */
+    margin-top: 20px;
 }
 
 /* Animación de deslizamiento */
