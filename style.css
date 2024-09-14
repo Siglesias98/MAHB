@@ -1,20 +1,60 @@
-.pagina-inicio {
-    text-align: center;
-    margin-top: 50px;
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+
+.inicio {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #1a1a1a;
+}
+
+.titulo {
+    font-size: 4rem;
+    color: yellow;
+    text-shadow: 0 0 10px #ffcc00, 0 0 20px #ffcc00, 0 0 30px #ff9900;
+    animation: brillar 1.5s infinite alternate;
+}
+
+@keyframes brillar {
+    0% {
+        text-shadow: 0 0 10px #ffcc00, 0 0 20px #ffcc00, 0 0 30px #ff9900;
+    }
+    100% {
+        text-shadow: 0 0 20px #ffff00, 0 0 40px #ffcc00, 0 0 60px #ffcc00;
+    }
 }
 
 .boton {
     padding: 10px 20px;
-    font-size: 16px;
+    font-size: 1.5rem;
+    color: white;
+    background-color: #ff9900;
+    border: none;
     cursor: pointer;
-}
-
-.imagen-container {
-    text-align: center;
+    transition: background-color 0.3s ease;
     margin-top: 20px;
 }
 
-#imagenFloral {
+.boton:hover {
+    background-color: #cc7a00;
+}
+
+.imagen-flor {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #ffffff;
+}
+
+.imagen-flor img {
     max-width: 100%;
     height: auto;
 }
